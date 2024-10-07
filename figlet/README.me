@@ -1,0 +1,72 @@
+# Text Renderer
+
+This Python script uses the `pyfiglet` library to render text in ASCII art fonts. It can take command-line arguments to specify a font or prompt the user for input interactively.
+
+## Table of Contents
+
+- [Features](#features)
+- [Requirements](#requirements)
+- [Installation](#installation)
+- [Usage](#usage)
+- [License](#license)
+
+## Features
+
+- Render text as ASCII art using a specified font.
+- Interactive input mode if no command-line arguments are provided.
+- Validates command-line arguments and provides error messages for incorrect usage.
+
+## Requirements
+
+- Python 3.x
+- `pyfiglet` library
+
+## Installation
+
+1. Clone this repository:
+   ```bash
+   git clone https://github.com/DanielAmanyi/my_cs50p_projects.git
+   Change to the project directory:
+   $ cd <yourproject/directory>
+   ```
+
+Install the required library:
+$ pip install pyfiglet
+
+Usage
+Command Line Arguments
+You can use the script from the command line with the following syntax:
+$ python text_renderer.py [-f FONT] FONT_NAME
+$ -f or --f: Specifies the font to use for rendering the text.
+FONT_NAME: The name of the font to use.
+Interactive Mode
+If no command-line arguments are provided, the program will prompt you to input text interactively:
+
+$ Input: Your text here
+The output will display the rendered ASCII art.
+
+Example
+To use the default font:
+
+$ python text_renderer.py
+To specify a font:
+
+$ python text_renderer.py -f slant
+$ Input: Hello World
+
+Error Handling
+If the script is run without any command-line arguments, it will enter interactive mode.
+If the script is run with invalid arguments, it will output an error message and exit.
+
+License
+
+This project is licensed under the MIT License. See the LICENSE file for details.
+
+### Instructions to Add the README to Your Repository
+
+1. Create a new file named `README.md` in your project directory.
+2. Copy the above content into the `README.md` file.
+3. Stage the file for commit:
+   ```bash
+   git add README.md
+   ```
