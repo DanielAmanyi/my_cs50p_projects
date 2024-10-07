@@ -1,1 +1,0 @@
-# my_cs50p_projects

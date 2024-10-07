@@ -1,0 +1,47 @@
+Number Guessing Game
+
+This is a Python implementation of a simple number guessing game. The game selects a random number between 1 and a user-defined upper limit (called level), and the player must guess the number. After each guess, the program provides feedback to indicate whether the guess is too large, too small, or just right.
+
+How It Works
+
+The user is prompted to input a level. This number sets the upper limit for the random number to be guessed. The random number will be between 1 and the level provided.
+The user is then prompted to guess the random number.
+After each guess, the program responds with one of the following messages:
+"Too large!" if the guess is higher than the random number.
+"Too small!" if the guess is lower than the random number.
+"Just right!" if the guess matches the random number, and the game ends.
+The game continues until the user guesses the number correctly.
+Functions
+
+get_level()
+Prompts the user to enter a valid level (positive integer).
+Keeps asking for input until a valid integer is provided.
+get_guess()
+Prompts the user to enter a valid guess (positive integer).
+Keeps asking for input until a valid integer is provided.
+Main Game Loop
+Generates a random number between 1 and the user-specified level.
+Continuously prompts the user to guess the number until the correct one is guessed.
+
+Example Usage
+Level: 10
+Guess: 5
+Too small!
+Guess: 8
+Too large!
+Guess: 7
+Just right!
+
+Requirements
+
+Python 3.x
+How to Run
+
+Clone this repository.
+Run the python file containing the code in your terminal:
+$ python3 guess_game.py
+
+Follow the on-screen instructions to play the game.
+License
+
+This project is licensed under the MIT License.
