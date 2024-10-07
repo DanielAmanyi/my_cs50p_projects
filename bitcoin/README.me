@@ -1,0 +1,65 @@
+# Bitcoin Price Calculator
+
+This Python script queries the CoinDesk Bitcoin Price Index API to fetch the current price of Bitcoin in USD and calculates the cost based on the number of Bitcoins specified by the user as a command-line argument.
+
+## Table of Contents
+
+- [Features](#features)
+- [Requirements](#requirements)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Example](#example)
+- [License](#license)
+
+## Features
+
+- Fetches the current price of Bitcoin in USD from the CoinDesk API.
+- Takes the number of Bitcoins to buy as a command-line argument.
+- Handles exceptions for invalid user input and API request failures.
+- Outputs the total cost of the specified number of Bitcoins formatted with thousands separators and four decimal places.
+
+## Requirements
+
+- Python 3.6 or higher
+- `requests` library
+
+## Installation
+
+1. Clone the repository:
+   $ git clone https://github.com/DanielAmanyi/my_cs50p_projects.git
+
+Navigate to the project directory:
+
+$ cd my_cs50p_projects/bitcoin_price_calculator
+
+Create a virtual environment (Optional for macOS 2024 and above) :
+$ python -m venv venv
+$ source venv/bin/activate
+
+Activate the virtual environment:
+On Windows:
+$ venv\Scripts\activate
+
+Install dependencies
+$ pip install requests
+
+Usage
+Run the script from the command line with the number of Bitcoins you wish to buy as an argument:
+$ python bitcoin_price.py <number_of_bitcoins>
+
+Example
+To calculate the cost of 1.5 Bitcoins:
+$ python bitcoin_price.py 1.5
+
+Output:
+The cost of 1.5 Bitcoins is: $95,020.1325
+
+License
+This project is licensed under the MIT License. See the LICENSE file for details.
+$
+
+### Notes:
+
+- Make sure to replace `my_cs50p_projects` and `bitcoin_price_calculator` with the correct folder structure if they differ in your actual project.
+- If you have additional licenses or contributions, you can add sections accordingly.
+- Remember to add any additional files (like `LICENSE`) as needed to your repository.
