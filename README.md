@@ -5,7 +5,7 @@
 
 ## CS50 Problem Set 4 - Game
 
-### Author: [Your Name]
+### Author: Amanyi Daniel
 
 ---
 
